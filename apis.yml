@@ -1,7 +1,14 @@
 aid: powerlight-technologies
 name: PowerLight Technologies
-description: 'PowerLight Technologies is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'PowerLight Technologies is an American engineering company headquartered in Kent, Washington
+  that develops laser power beaming systems — wireless transmission of kilowatt-level electrical power
+  over free space and over optical fiber. Founded as LaserMotive and renamed in 2017, the company builds
+  power-over-fiber and free-space laser power links for defense unmanned aerial systems, telecom sites,
+  temporary and disaster power, smart-grid applications, and lunar and satellite power distribution,
+  including work under DARPA''s LunA-10 program. Its products are hardware energy-transmission systems
+  rather than software, and the company publishes no public developer program, API, or machine-readable
+  API contract.'
+image: https://powerlighttech.com/wp-content/uploads/2024/06/IMG_3454-scaled.jpg
 url: https://raw.githubusercontent.com/api-evangelist/powerlight-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +19,15 @@ created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Energy
+- Wireless Power
+- Power Beaming
+- Lasers
+- Aerospace
+- Defense
+- Space
+- Telecom
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,51 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/powerlight-technologies-domain-security.yml
 - type: Website
+  url: https://powerlighttech.com/
+- type: Blog
+  url: https://powerlighttech.com/media/
+- type: BlogRSS
+  url: https://powerlighttech.com/feed/
+- type: Support
+  url: https://powerlighttech.com/contact-form/
+- type: GitHubOrganization
+  url: https://github.com/PowerLightTech
+- type: LinkedIn
+  url: https://www.linkedin.com/company/powerlight-technologies/
+- type: Twitter
+  url: https://x.com/PowerLightTech
+- type: YouTube
+  url: https://www.youtube.com/@PowerLightTech
+- type: Wikipedia
+  url: https://en.wikipedia.org/wiki/Powerlight_Technologies
+- type: SecondaryMarketListing
   url: https://forgeglobal.com/powerlight-technologies_stock/
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    PowerLight Technologies sells laser power-beaming hardware (power-over-fiber and
+    free-space kilowatt laser links) and publishes no developer surface at all — its
+    22-page WordPress marketing site has no developer, API, docs or pricing page, no
+    api/developer/docs subdomain resolves, every /.well-known/ and spec path 404s, and
+    its GitHub org (PowerLightTech) holds only a .github repo and a fork of a third-party
+    Sorensen power-supply driver. The only machine-readable surface on the domain is the
+    default WordPress core /wp-json/ endpoint, which is the CMS's, not a PowerLight API.
+  evidence:
+    - url: https://powerlighttech.com/openapi.json
+      status: 404
+    - url: https://powerlighttech.com/.well-known/agent-card.json
+      status: 404
+    - url: https://powerlighttech.com/page-sitemap.xml
+      status: 200
+    - url: https://api.github.com/orgs/PowerLightTech/repos
+      status: 200
+  checked: '2026-08-26'
