@@ -8,6 +8,17 @@ description: 'PowerLight Technologies is an American engineering company headqua
   including work under DARPA''s LunA-10 program. Its products are hardware energy-transmission systems
   rather than software, and the company publishes no public developer program, API, or machine-readable
   API contract.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://powerlighttech.com/wp-content/uploads/2024/06/IMG_3454-scaled.jpg
 url: https://raw.githubusercontent.com/api-evangelist/powerlight-technologies/refs/heads/main/apis.yml
 x-type: company
