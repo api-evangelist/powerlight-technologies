@@ -1,0 +1,15 @@
+{
+  "repo": "powerlight-technologies",
+  "feeds": [
+    {
+      "source": "https://powerlighttech.com/",
+      "error": "HTTPError"
+    },
+    {
+      "source": "https://powerlighttech.com/media/",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-30T22:33:40Z"
+}
